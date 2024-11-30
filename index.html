@@ -15,10 +15,13 @@
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand">COREO</a>
-          <form class="d-flex" role="search">
+          <form id="buscador" class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Busque su prenda" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Buscar</button>
-            <button class="carrito"> <img src="https://res.cloudinary.com/dkqpam2fg/image/upload/t_Coleccion PreEntrega2/v1732824195/3144456_jqjwv4.png" width="30" height="24"> </button>
+            <button class="carrito" type="button" data-bs-toggle="modal" data-bs-target="#modalCarrito">
+              <img src="https://res.cloudinary.com/dkqpam2fg/image/upload/t_Coleccion PreEntrega2/v1732824195/3144456_jqjwv4.png" width="30" height="24">
+              <span id="contadorCarrito" class="badge bg-danger">0</span>
+          </button>
           </form>
         </div>
       </nav>
@@ -47,135 +50,33 @@
         </button>
       </div>
 </div>
-
 <nav>
-    <div class="row row-cols-3 row-cols-md-6 g-6">
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://res.cloudinary.com/dkqpam2fg/image/upload/c_fill,w_1080,h_1080/v1732732975/remera_jordan_cknbbt.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Jordan Grey</h5>
-              <p class="card-text">Remera Jordan Unisex en color gris, disponible para envío inmediato. Talles disponibles: XS, S, M , L ,XL y XXL.</p>
-              <button>Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://res.cloudinary.com/dkqpam2fg/image/upload/c_fill,w_1080,h_1080/v1732732974/championes_reebok_iaqzao.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Reebok Street</h5>
-              <p class="card-text">Championes Reebok, disponible para envío inmediato. Talles disponibles desde el 36 al 46.</p>
-              <button>Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://res.cloudinary.com/dkqpam2fg/image/upload/drricl973mrs21t9c4ey" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Gorro Winter Mod</h5>
-              <p class="card-text">Gorro Nike, modelo unisex, ideal para un buen look de invierno.</p>
-              <button>Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://res.cloudinary.com/dkqpam2fg/image/upload/c_fill,w_1080,h_1080/v1732732975/nike_rosa_frente_swmvco.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Pinky Ninky </h5>
-              <p class="card-text">Remera Nike Women en color rosado, disponible para envío inmediato. Talles disponibles: XS, S, M , L.</p>
-              <button>Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://res.cloudinary.com/dkqpam2fg/image/upload/c_fill,w_1080,h_1080/v1732732975/remera_adidas_e6pta2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Adidas Original</h5>
-              <p class="card-text">Remera Adidas Unisex en color blanco, disponible para envío inmediato. Talles disponibles: XS, S, M , L ,XL y XXL.</p>
-              <button>Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://res.cloudinary.com/dkqpam2fg/image/upload/c_fill,w_1080,h_1080/v1732732974/championes_new_balance_znffmm.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">NB BROWN</h5>
-              <p class="card-text">Championes New Balance en color marron, disponible para envío inmediato. Talles disponibles: XS, S, M , L ,XL y XXL.</p>
-              <button>Agregar al carrito</button>
-            </div>
-          </div>
-        </div> 
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://res.cloudinary.com/dkqpam2fg/image/upload/hnq8kwxmqgozw5wdiwpq" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Pantalon Classic</h5>
-              <p class="card-text">Pantalon Classic en color negro, disponible para envío inmediato. Talles disponibles: XS, S, M , L ,XL y XXL.</p>
-              <button>Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://res.cloudinary.com/dkqpam2fg/image/upload/c_fill,w_1080,h_1080/v1732732974/buzo_puma_kljn2s.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Hoodie Clasic</h5>
-              <p class="card-text">Hoodie Puma Unisex en color crema, disponible para envío inmediato. Talles disponibles: XS, S, M , L ,XL.</p>
-              <button>Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://res.cloudinary.com/dkqpam2fg/image/upload/c_fill,w_1080,h_1080/v1732732974/buzo_adidas_asm4jp.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Hoodie Street</h5>
-              <p class="card-text">Hoodie Adidas en color old blue , disponible para envío inmediato. Talles disponibles: XS, S, M , L ,XL y XXL.</p>
-              <button>Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://res.cloudinary.com/dkqpam2fg/image/upload/c_fill,w_1080,h_1080/v1732732974/gorro_adidas_ifp9d4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Gorra Summer</h5>
-              <p class="card-text">Gorra Adidas en color blanco puro, disponible para envío inmediato.</p>
-              <button>Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://res.cloudinary.com/dkqpam2fg/image/upload/c_fill,w_1080,h_1080/v1732732974/canguro_adidas_eyhkvn.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Hoodie Classic</h5>
-              <p class="card-text">Hoodie Adidas Unisex en color negro, disponible para envío inmediato. Talles disponibles: XS, S, M , L.</p>
-              <button>Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="https://res.cloudinary.com/dkqpam2fg/image/upload/bcndszcmvl7rorv2ove3" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Pantalon Future</h5>
-              <p class="card-text">Pantalon Future, marca Adidas en color gris, disponible para envío inmediato. Talles disponibles: XS, S, M , L ,XL y XXL.</p>
-              <button>Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div id="productos" class="row row-cols-3 row-cols-md-6 g-6"></div>
 </nav>
 <div>
   <h1 class="marcas d-flex justify-content-center flex-wrap"> NUESTRAS MARCAS</h1>
   <div class="logos-row d-flex justify-content-center flex-wrap gap-3">
     <img src="https://res.cloudinary.com/dkqpam2fg/image/upload/v1732827280/ohohbpmcmtweafscdyhj.png" class="imagenfooter">
+  </div>
+</div>
+<div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="modalCarritoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCarritoLabel">Carrito de Compras</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="listaCarrito" class="list-group"></ul>
+        <div class="mt-3">
+          <strong>Total: $<span id="totalCarrito">0</span></strong>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Finalizar Compra</button>
+      </div>
+    </div>
   </div>
 </div>
 <footer class="footer">
