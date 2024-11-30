@@ -17,7 +17,6 @@
           <a class="navbar-brand">COREO</a>
           <form id="buscador" class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Busque su prenda" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
             <button class="carrito" type="button" data-bs-toggle="modal" data-bs-target="#modalCarrito">
               <img src="https://res.cloudinary.com/dkqpam2fg/image/upload/t_Coleccion PreEntrega2/v1732824195/3144456_jqjwv4.png" width="30" height="24">
               <span id="contadorCarrito" class="badge bg-danger">0</span>
@@ -63,7 +62,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modalCarritoLabel">Carrito de Compras</h5>
+        <h5 class="modal-title" id="modalCarritoLabel">¡Te lo llevas a casa!</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -73,8 +72,8 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Finalizar Compra</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
+        <button type="button" id="botonFinalizar" class="btn btn-primary">Finalizar Compra</button>
       </div>
     </div>
   </div>
