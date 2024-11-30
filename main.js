@@ -72,8 +72,7 @@ const productos = [
         precio: 1790
     }
 ];
-
-const carrito = [];
+const carrito = []
 const Productos = document.getElementById("productos");
 const contadorCarrito = document.getElementById("contadorCarrito");
 const listaCarrito = document.getElementById("listaCarrito");
@@ -123,6 +122,7 @@ const renderizarCarrito = () => {
     totalCarrito.textContent = total;
 };
 
+
 Productos.addEventListener("click", (event) => {
     if (event.target.tagName === "BUTTON" && event.target.id.startsWith("boton-")) {
         const productoId = event.target.id.replace("boton-", "");
@@ -157,4 +157,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     
 });
-

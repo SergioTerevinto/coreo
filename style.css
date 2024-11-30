@@ -92,3 +92,22 @@
     max-width: 50%;
     max-height: 75%;
 }
+
+.modal-footer button {
+    align-self: center;
+    margin-top: auto;
+    text-decoration: none;
+    padding: 1vh;
+    background-color: black;
+    color: antiquewhite;
+    border: none;
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.modal-footer button:hover {
+    background-color: orangered;
+    color: antiquewhite; 
+}
